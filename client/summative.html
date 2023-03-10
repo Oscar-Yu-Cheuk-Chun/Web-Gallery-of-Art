@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Barlow Font -->
+  <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="summative.css">
+
+  <!-- D3.JS -->
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-scale@4"></script>
+
+  
+
+
+  <title>Web Gallery of Art</title>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar header navbar-expand-lg">
+  <div class="container-fluid">
+
+  <!-- Header Left -->
+    
+    <div class="header-left">
+      <a class="navbar-brand logo " href="summative.html"><h2>Web Gallery of Art</h2></a>
+      <ul class="nav nav-tabs " id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="user1-tab" data-bs-toggle="tab" data-bs-target="#user1-tab-pane" type="button" role="tab" aria-controls="user1-tab-pane" aria-selected="true">User</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin-tab-pane" type="button" role="tab" aria-controls="admin-tab-pane" aria-selected="false">Admin</button>
+        </li>
+      </ul>
+    </div>
+
+  <!-- Header Right -->
+    <div class="btn-group ">
+      <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+      </button>
+      <div class="dropdown-menu dropdown-menu-cart dropdown-menu-end " >
+        <div class="container cart" id="cart">
+          <h6>Your Order</h6>
+
+          <!-- Orders -->
+          <div class="order" id="order" >
+          </div>
+
+
+          <div class="order-total">
+            <h3 class="col-10">Total:   </h3>
+            <h3 class=" col-2" id="total-price">0</h3>
+          </div>
+          <button class="btn btn-primary" id="checkout" >Checkout</button>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Toast -->
+<div class="toast" id="toast" ro le="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-body">
+    Successful!
+  </div>
+</div>
+
+
+
+<div class="tab-content" id="myTabContent">
+
+
+  <!-- User-tab -->
+  <div class="tab-pane fade user-tab show active" id="user1-tab-pane" role="tabpanel" aria-labelledby="user1-tab" tabindex="0">
+    <div class="art-section">
+
+      <!-- art section header -->
+      <div class="art-header container">
+          <div class="art-header-left">
+            <h1>European</h1>
+          </div>
+    
+          <!-- Search -->
+          <div class="art-header-right">
+            <form class="form-inline my-2 my-lg-0 search" autocomplete='off'>
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search" art-search autocomplete="off">
+            </form>
+          </div>
+    
+    
+    
+      </div>
+    
+
+      <!-- images of art section -->
+      <div class="artfilter ">
+    
+        <!-- Art -->
+        <ul class="container art " id="art" art-cards-container>
+        </ul>
+    
+      </div>
+    
+      <!-- PAGE NAV -->
+      <!-- <nav aria-label="Page navigation example" class="Page">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav> -->
+    
+    </div>
+  </div>
+
+  <!-- Admin-tab -->
+  <div class="tab-pane fade " id="admin-tab-pane" role="tabpanel" aria-labelledby="admin-tab" tabindex="0">
+    <div class="admin-tab">
+      <div id="add-item" class="admin-box ">
+        <h2>Add a new product</h2>
+
+
+        <!-- action="/postitem" method="post" -->
+        <form id="order-form" autocomplete="off">
+          <div class="mb-3">
+            <input type="text" class="form-control"  name='name'  placeholder="Artwork Name" autocomplete="off">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control"  name='artist'  placeholder="Artist Name" autocomplete="off">
+          </div>
+          <div class="mb-3">
+            <input type="number" class="form-control" name='price'  placeholder="Price" autocomplete="off">
+          </div>
+          <input type="file" class="form-control mb-3" id="customFile" name="src" autocomplete="off"/>
+          <button type="submit" class="btn btn-primary" id="new-product">Submit</button>
+        </form>
+
+
+
+
+
+      </div>
+      <div id="review" class="admin-box">
+        <div class="review-head" id="review-head">
+          <h2>View Order</h2>
+          <button id="refresh-order" type="button">refresh</button>
+        </div>
+        </div> 
+      </div>
+      <div id="check-revenue" class="admin-box"></div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<template art-template id="art-template">
+  <li class="art-card col-12 col-md-6 col-lg-4 ">
+    <div class="art-img ">
+      <img src="" art-src>
+    </div>
+    <div class="art-description">
+      <div class="art-title-info col">
+        <div class="price" art-price></div>
+        <div class="artist" art-artist></div>
+        <div class="name" art-name></div>  
+      </div>
+        <button class="purchaseBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg>
+        </button>
+    </div>
+  </li>
+</template>
+
+<template cart-card>
+  <div class="cart-item">
+    <div class="remove-item">
+      <button type="button" class=" btn-close" aria-label="Close">
+      </button>
+    </div>
+    <div class="cart-item-info col-10">
+      <div class="item-img"><img src="" alt=""></div>
+      <div class="cart-item-text">
+        <div class="cart-item-name"></div>
+        <div class="cart-item-artist"></div>
+      </div>
+    </div>
+    <div class="cart-item-price col-2"></div>
+  </div>
+</template>
+
+<template review item>
+  <tr class="review-item">
+    <th scope="row" class="itemid">1</th>
+    <td class="item-image"><img src="./image/01princ2.jpeg" alt=""></td>
+    <td class="item-total">28</td>
+    <td class="item-quantity">2</td>
+  </tr>
+</template>
+
+
+<!-- JS -->
+<script src="client.js"></script>
+
+</body>
+</html>
