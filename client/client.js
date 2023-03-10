@@ -153,7 +153,6 @@ refrashOrder.addEventListener('click', () => {
     .catch(error => window.alert(error + '\n' + 'Server disconnected'))
     .then(orders => {
         console.log(orders);
-        toastClicked();
     const reset = document.querySelectorAll('[order]');
     for (let i = 0; i < reset.length; i++) {
         reset[i].remove();
