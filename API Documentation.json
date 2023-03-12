@@ -219,7 +219,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n        \"itemID\": 12,\n        \"name\": \"The Starry Night\",\n        \"artist\": \"Vincent van Gogh\",\n        \"price\": 99,\n        \"src\": \"image/newProduct.jpeg\"\n    }",
+							"raw": "{\n    \"itemID\": 12,\n    \"name\": \"The Starry Night\",\n    \"artist\": \"Vincent van Gogh\",\n    \"price\": 99,\n    \"src\": \"image/newProduct.jpeg\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -255,15 +255,15 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "1700"
+							"value": "1513"
 						},
 						{
 							"key": "ETag",
-							"value": "W/\"6a4-hLmCvMbDmDmJgJzXg91Q4cLelkU\""
+							"value": "W/\"5e9-Rf7PRnoYWHfqoJAufW2KZh+pikk\""
 						},
 						{
 							"key": "Date",
-							"value": "Wed, 01 Mar 2023 15:01:20 GMT"
+							"value": "Sun, 12 Mar 2023 19:54:45 GMT"
 						},
 						{
 							"key": "Connection",
@@ -275,7 +275,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"itemID\": 0,\n        \"name\": \"portrait of emperor rudolf ii\",\n        \"artist\": \"AACHEN, Hans von\",\n        \"price\": 14,\n        \"src\": \"image/rudolf2.jpeg\"\n    },\n    {\n        \"itemID\": 1,\n        \"name\": \"portrait of josef heintz\",\n        \"artist\": \"AACHEN, Hans von\",\n        \"price\": 35,\n        \"src\": \"image/portrai2.jpeg\"\n    },\n    {\n        \"itemID\": 2,\n        \"name\": \"anna of tyrol\",\n        \"artist\": \"AACHEN, Hans von\",\n        \"price\": 20,\n        \"src\": \"image/portrai3.jpeg\"\n    },\n    {\n        \"itemID\": 3,\n        \"name\": \"a prince of saxony\",\n        \"artist\": \"CRANACH, Lucas the Elder\",\n        \"price\": 10,\n        \"src\": \"image/01princ1.jpeg\"\n    },\n    {\n        \"itemID\": 4,\n        \"name\": \"portrait of a jurist\",\n        \"artist\": \"CRANACH, Lucas the Elder\",\n        \"price\": 10,\n        \"src\": \"image/03juris1.jpeg\"\n    },\n    {\n        \"itemID\": 5,\n        \"name\": \"a princess of saxony\",\n        \"artist\": \"CRANACH, Lucas the Elder\",\n        \"price\": 10,\n        \"src\": \"image/01princ2.jpeg\"\n    },\n    {\n        \"itemID\": 6,\n        \"name\": \"no. 48 the seven vices: envy\",\n        \"artist\": \"GIOTTO di Bondone\",\n        \"price\": 10,\n        \"src\": \"image/virtu_2.jpeg\"\n    },\n    {\n        \"itemID\": 7,\n        \"name\": \"no. 50 the seven vices: injustice\",\n        \"artist\": \"GIOTTO di Bondone\",\n        \"price\": 10,\n        \"src\": \"image/vice_4.jpeg\"\n    },\n    {\n        \"itemID\": 8,\n        \"name\": \"no. 53 the seven vices: foolishness\",\n        \"artist\": \"GIOTTO di Bondone\",\n        \"price\": 10,\n        \"src\": \"image/vice_7.jpeg\"\n    },\n    {\n        \"itemID\": 9,\n        \"name\": \"still-life with fruit and crystal vase\",\n        \"artist\": \"RAELST, Willem van\",\n        \"price\": 10,\n        \"src\": \"image/still_fr.jpeg\"\n    },\n    {\n        \"itemID\": 10,\n        \"name\": \"still-life with fruit\",\n        \"artist\": \"RAELST, Willem van\",\n        \"price\": 10,\n        \"src\": \"image/stillfru.jpeg\"\n    },\n    {\n        \"itemID\": 11,\n        \"name\": \"breakfast piece\",\n        \"artist\": \"RAELST, Willem van\",\n        \"price\": 10,\n        \"src\": \"image/breakfas.jpeg\"\n    },\n    {\n        \"name\": \"hi\",\n        \"artist\": \"asdf\",\n        \"price\": 99,\n        \"src\": \"image/newProduct.jpeg\",\n        \"id\": 12\n    },\n    {\n        \"itemID\": 12,\n        \"name\": \"breakfast piece\",\n        \"artist\": \"RAELST, Willem van\",\n        \"price\": 10,\n        \"src\": \"image/breakfas.jpeg\"\n    },\n    {\n        \"itemID\": 12,\n        \"name\": \"The Starry Night\",\n        \"artist\": \"Vincent van Gogh\",\n        \"price\": 99,\n        \"src\": \"image/newProduct.jpeg\"\n    }\n]"
+					"body": "[\n    {\n        \"itemID\": 0,\n        \"name\": \"portrait of emperor rudolf ii\",\n        \"artist\": \"AACHEN, Hans von\",\n        \"price\": 14,\n        \"src\": \"image/rudolf2.jpeg\"\n    },\n    {\n        \"itemID\": 1,\n        \"name\": \"portrait of josef heintz\",\n        \"artist\": \"AACHEN, Hans von\",\n        \"price\": 35,\n        \"src\": \"image/portrai2.jpeg\"\n    },\n    {\n        \"itemID\": 2,\n        \"name\": \"anna of tyrol\",\n        \"artist\": \"AACHEN, Hans von\",\n        \"price\": 20,\n        \"src\": \"image/portrai3.jpeg\"\n    },\n    {\n        \"itemID\": 3,\n        \"name\": \"a prince of saxony\",\n        \"artist\": \"CRANACH, Lucas the Elder\",\n        \"price\": 10,\n        \"src\": \"image/01princ1.jpeg\"\n    },\n    {\n        \"itemID\": 4,\n        \"name\": \"portrait of a jurist\",\n        \"artist\": \"CRANACH, Lucas the Elder\",\n        \"price\": 10,\n        \"src\": \"image/03juris1.jpeg\"\n    },\n    {\n        \"itemID\": 5,\n        \"name\": \"a princess of saxony\",\n        \"artist\": \"CRANACH, Lucas the Elder\",\n        \"price\": 10,\n        \"src\": \"image/01princ2.jpeg\"\n    },\n    {\n        \"itemID\": 6,\n        \"name\": \"no. 48 the seven vices: envy\",\n        \"artist\": \"GIOTTO di Bondone\",\n        \"price\": 10,\n        \"src\": \"image/virtu_2.jpeg\"\n    },\n    {\n        \"itemID\": 7,\n        \"name\": \"no. 50 the seven vices: injustice\",\n        \"artist\": \"GIOTTO di Bondone\",\n        \"price\": 10,\n        \"src\": \"image/vice_4.jpeg\"\n    },\n    {\n        \"itemID\": 8,\n        \"name\": \"no. 53 the seven vices: foolishness\",\n        \"artist\": \"GIOTTO di Bondone\",\n        \"price\": 10,\n        \"src\": \"image/vice_7.jpeg\"\n    },\n    {\n        \"itemID\": 9,\n        \"name\": \"still-life with fruit and crystal vase\",\n        \"artist\": \"RAELST, Willem van\",\n        \"price\": 10,\n        \"src\": \"image/still_fr.jpeg\"\n    },\n    {\n        \"itemID\": 10,\n        \"name\": \"still-life with fruit\",\n        \"artist\": \"RAELST, Willem van\",\n        \"price\": 10,\n        \"src\": \"image/stillfru.jpeg\"\n    },\n    {\n        \"itemID\": 11,\n        \"name\": \"breakfast piece\",\n        \"artist\": \"RAELST, Willem van\",\n        \"price\": 10,\n        \"src\": \"image/breakfas.jpeg\"\n    },\n    {\n        \"itemID\": 12,\n        \"name\": \"The Starry Night\",\n        \"artist\": \"Vincent van Gogh\",\n        \"price\": 99,\n        \"src\": \"image/newProduct.jpeg\"\n    }\n]"
 				}
 			]
 		},

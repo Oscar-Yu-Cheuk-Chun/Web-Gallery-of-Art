@@ -16,14 +16,12 @@ app.get('/orders', function (req, resp) {
 
 app.post('/postitem', (req, resp) => {
   const newItem = req.body;
-  console.log(newItem);
   item.push(newItem);
   resp.json(item);
 });
 
 app.post('/postorder', (req, resp) => {
   const order = req.body;
-  console.log(order);
   order.orderId = orders.length;
   orders.push(order);
   resp.json(orders);
