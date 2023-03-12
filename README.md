@@ -23,9 +23,14 @@ Web Gallery of Art is an e-commerce gallery website that allows users to view an
 
 - Admin Page: The admin page allows the website administrator to manage the website, view orders that have been submitted, and add new products to the website.
 
-## Run JEST
-### Go to the directory of the file with shell / terminal
-- In the shell / terminal
+## Run TEST
+### In the shell / terminal
+- for eslint
+
+```bash
+ npm run pretest
+```
+- for JEST
 
 ```bash
  npm test
@@ -33,8 +38,16 @@ Web Gallery of Art is an e-commerce gallery website that allows users to view an
 
 # API Documentation
 
-The REST API to the Web Gallery of Art is described below.
+### The REST API to the Web Gallery of Art is described below.
+### The documentation can also be view via Postman at:
 
+```bash
+https://documenter.getpostman.com/view/26074311/2s93CSpWg1
+```
+or in the folder
+```bash
+API_Documentation.json
+```
 ## Get list of items
     http://127.0.0.1:8090/item
 Allow to get object array of information about artworks, including its item ID, title, artist, description, price, and the directory of the image source.
