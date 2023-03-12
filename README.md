@@ -277,20 +277,6 @@ Allow an item, which includes its item ID, title, artist, description, price, an
         "src": "image/breakfas.jpeg"
     },
     {
-        "name": "hi",
-        "artist": "asdf",
-        "price": 99,
-        "src": "image/newProduct.jpeg",
-        "id": 12
-    },
-    {
-        "itemID": 12,
-        "name": "breakfast piece",
-        "artist": "RAELST, Willem van",
-        "price": 10,
-        "src": "image/breakfas.jpeg"
-    },
-    {
         "itemID": 12,
         "name": "The Starry Night",
         "artist": "Vincent van Gogh",
