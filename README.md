@@ -176,7 +176,7 @@ Allow to get object array of information about orders, including its order ID, t
     }
     ]
 
-## Create item
+## POST item
     http://127.0.0.1:8090/postitem
 Allow an item, which includes its item ID, title, artist, description, price, and the directory of the image source, to be added into the item list.
 ### Request
@@ -298,7 +298,7 @@ Allow an item, which includes its item ID, title, artist, description, price, an
     }
     ]
 
-## Create order
+## POST order
     http://127.0.0.1:8090/postorder
 Allow an order, which includes its order ID, total price, and the purchases array, which contains purchase ID and item ID, to be added into the orders list.
 
