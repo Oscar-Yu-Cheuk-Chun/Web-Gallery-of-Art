@@ -10,7 +10,7 @@ Web Gallery of Art is an e-commerce gallery website that allows users to view an
 ```bash
  npm start
 ```
--  Open browser
+-  Navigate  [here](http://127.0.0.1:8090/summative.html)
 ```bash
  http://127.0.0.1:8090/summative.html
 ```
@@ -39,11 +39,11 @@ Web Gallery of Art is an e-commerce gallery website that allows users to view an
 # API Documentation
 
 ### The REST API to the Web Gallery of Art is described below.
-### The documentation can also be view via Postman at:
-
+### The documentation can also be view via Postman at [here](https://documenter.getpostman.com/view/26074311/2s93CSpWg1) :
 ```bash
 https://documenter.getpostman.com/view/26074311/2s93CSpWg1
 ```
+
 or in the folder
 ```bash
 API_Documentation.json
