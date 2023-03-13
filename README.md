@@ -48,7 +48,7 @@ or in the folder
 ```bash
 API_Documentation.json
 ```
-## Get list of items
+## GET list of items
     http://127.0.0.1:8090/item
 Allow to get object array of information about artworks, including its item ID, title, artist, description, price, and the directory of the image source.
 
@@ -147,7 +147,7 @@ Allow to get object array of information about artworks, including its item ID, 
     }
     ]
 
-## Get list of orders
+## GET list of orders
     http://127.0.0.1:8090/postitem
 Allow to get object array of information about orders, including its order ID, total price, and the purchases array, which contains purchase ID and item ID.
 
